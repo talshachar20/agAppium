@@ -33,7 +33,7 @@ public class LoginPage extends BasePage{
     }
     
     public StartPage loginAndExpectSuccess(String username, String password) {
-    	System.out.println("performing login to app and expecting to move to start page);
+    	System.out.println("performing login to app");
     	setUserName(username);
     	setPassword(password);
     	this.loginButton.click();
