@@ -4,6 +4,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
@@ -15,6 +17,9 @@ public class LoginPage extends BasePage{
 	
     public LoginPage(AppiumDriver<WebElement> driver) {
     	super(driver);
+    	WebDriverWait wait = new WebDriverWait(driver,20);
+    	wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("frg_auth_enter_login_field"))); 
+    	//check for element to verify that we are in the current screen
 	}
 
     @FindBy(id = "frg_auth_enter_login_field")
