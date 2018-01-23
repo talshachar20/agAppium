@@ -41,7 +41,7 @@ public class LoginPage extends BasePage{
     }
     
     public StartPage loginWithValidUser() {
-    	return loginAndExpectSuccess("test", "1234");
+    	return loginAndExpectSuccess("tazos123@gmail.com", "testpass");
     }
 	private void setPassword(String password) {
     	System.out.println("Setting password as: " + password);
