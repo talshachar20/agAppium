@@ -20,3 +20,5 @@ cap.setCapability("udid", "192.168.57.101:5555");
 
 ### Comments: 
 For a bigger project configuration, I would have create exec command from terminal, which allows to run the tests with specific tags (for example: regression set, smoke set etc..)
+
+It is possible to add to setup the option to open emulator via the test 
